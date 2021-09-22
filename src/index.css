@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.collapse,
+.profile,
+.menu {
+  background-color: rgb(63, 60, 60);
+  width: 100%;
+  float: left;
+}
+
+.nav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.nav a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.center {
+  color: white;
+  text-align: center;
+}
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.nav a:hover,
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.navbar {
+  height: 100vh;
+  position: sticky;
+  left: 0;
+  top: 0;
+
+  transition: 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+
+.menu-item {
+  margin: 10px 0;
+}
+
+.menu-item span {
+  margin-left: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.profile .flex {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profile .profile-desp {
+  font-weight: 500;
+  font-size: 0.75em;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.spacing {
+  word-spacing: 2em;
+}
+.collapse button {
+  border: none;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  cursor: pointer;
+  justify-content: space-evenly;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.profile-photo {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+
+.profile-photo img {
+  border-radius: 50%;
+}
+
+.profile-head,
+.profile-desp {
+  text-align: center;
+}
+
+button {
+  margin-top: 80px;
+  margin: 2px;
+}
+
+table.table {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+
+.table td,
+.table th {
+  text-align: center;
+  border: 0;
+}
+
+.smallbtn {
+  background-color: #698c4f;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  padding: 0.5rem 0.9rem;
+}
+
+.smallimg {
+  width: 2rem;
+  height: 2rem;
+}
